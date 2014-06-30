@@ -195,7 +195,8 @@
 					}
 				}
 
-				height += boxOffset;
+				// Ignoring boxOffset to prevent the text area from being too tall. -- freeatnet
+				// height += boxOffset;
 
 				if (original !== height) {
 					ta.style.height = height + 'px';
